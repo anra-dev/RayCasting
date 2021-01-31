@@ -2,8 +2,6 @@ import math
 import pygame
 from settings import *
 from player import Player
-from map import world_map
-from ray_casting import ray_casting
 from drawing import Drawing
 
 

@@ -10,13 +10,14 @@ class Drawing:
         self.sc = sc
         self.sc_map = sc_map
         self.font = pygame.font.SysFont('Arial', 36, bold=True)
+        self.texture = pygame.image.load('img/1.png').convert()
 
     def background(self):
         pygame.draw.rect(self.sc, SKYBLUE, (0, 0, WIDTH, HALF_HEIGHT))
         pygame.draw.rect(self.sc, DARKGRAY, (0, HALF_HEIGHT, WIDTH, HEIGHT))
 
     def world(self, player_pos, player_angle):
-        ray_casting(self.sc, player_pos, player_angle)
+        ray_casting(self.sc, player_pos, player_angle, self.texture)
 
     def fps(self, clock):
         display_fps = str(int(clock.get_fps()))
@@ -29,6 +30,7 @@ class Drawing:
         pygame.draw.line(self.sc_map, YELLOW, (map_x, map_y), (map_x + 12 * math.cos(player.angle),
                                                  map_y + 12 * math.sin(player.angle)), 3)
         pygame.draw.circle(self.sc_map, RED, (map_x, map_y), 4)
+
         for x, y in mini_map:
             pygame.draw.rect(self.sc_map, GREEN, (x, y, MAP_TILE, MAP_TILE))
 

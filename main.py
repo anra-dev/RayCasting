@@ -31,4 +31,4 @@ while True:
     #     pygame.draw.rect(sc, DARKGRAY, (x, y, TILE, TILE), 2)
 
     pygame.display.flip()
-    clock.tick(FPS)
+    clock.tick()

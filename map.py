@@ -1,9 +1,9 @@
 from settings import *
 text_map = [
     'WWWWWWWWWWWW',
-    'W....WWWW..W',
-    'W.W........W',
-    'W...WW..WW.W',
+    'W..........W',
+    'W..........W',
+    'W...WW..W..W',
     'W...W....W.W',
     'W...WW.....W',
     'W.W....WWW.W',

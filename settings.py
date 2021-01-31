@@ -9,6 +9,11 @@ FPS = 200
 TILE = 100
 FPS_POS = (WIDTH-65, 5)
 
+# minimap settings
+MAP_SCALE = 5
+MAP_TILE = TILE // MAP_SCALE
+MAP_POS = (0, HEIGHT - HEIGHT // MAP_SCALE)
+
 # ray casting settings
 FOV = math.pi / 3
 HALF_FOV = FOV / 2
@@ -28,8 +33,9 @@ player_speed = 2
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (220, 0, 0)
-GREEN = (0, 220, 0)
+GREEN = (0, 80, 0)
 BLUE = (0, 0, 220)
 DARKGRAY = (110, 110, 110)
 PURPLE = (120, 0, 120)
 SKYBLUE = (0, 156, 255)
+YELLOW = (220, 220, 0)

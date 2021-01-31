@@ -22,6 +22,7 @@ while True:
     sc.fill(BLACK)
     drawing.background()
     drawing.world(player.pos, player.angle)
+    drawing.fps(clock)
 
     # pygame.draw.circle(sc, GREEN, player.pos, 12)
     # pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
